@@ -7,6 +7,9 @@ main() {
   List<int> oddNumbers = [];
   sayOdd(oddNumbers);
   print(oddNumbers);
+
+  evenNumbers.addAll(oddNumbers);
+  print(evenNumbers);
 }
 void sayEven(List<int> evenNumberlist) {
   int num = 50;
