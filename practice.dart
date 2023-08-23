@@ -4,8 +4,9 @@ main() {
   sayEven(evenNumbers);
   print(evenNumbers);
 
-  // List<int> oddNumbers = [];
-  sayOdd();
+  List<int> oddNumbers = [];
+  sayOdd(oddNumbers);
+  print(oddNumbers);
 }
 void sayEven(List<int> evenNumberlist) {
   int num = 50;
@@ -17,12 +18,12 @@ void sayEven(List<int> evenNumberlist) {
   }
 }
 
-void sayOdd() {
+void sayOdd(List<int> oddNumberlist) {
   int num = 50;
   print("The odd numbers between 1 and 50 are: ");
   for(int i=1; i<=num; i++) {
     if(i % 2 == 1) {
-      print(i);
+      oddNumberlist.add(i);
     }
   }
 }
